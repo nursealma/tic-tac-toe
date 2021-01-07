@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400&family=Mulish:wght@200&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c1472bd0e2.js" crossorigin="anonymous"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="game-container">
+        <h1>Tic Tac Toe</h1>
+        <div class="box zero" tabindex="1" id="0"></div>
+        <div class="box one" tabindex="2" id="1"></div>
+        <div class="box two" tabindex="3" id="2"></div>
+        <div class="box three" tabindex="4" id="3"></div>
+        <div class="box four" tabindex="5" id="4"></div>
+        <div class="box five" tabindex="6" id="5"></div>
+        <div class="box six" tabindex="7" id="6"></div>
+        <div class="box seven" tabindex="8" id="7"></div>
+        <div class="box eight" tabindex="9" id="8"></div>
+
+        <div class="toggle-container">
+            <label class="switch">
+                <input type="checkbox" id="randomToggle" tabindex="10" unchecked>
+                <span class="slider round"></span>
+            </label>
+            <p>Random Mode</p>
+        </div>
+        <div class="toggle-container">
+            <label class="switch">
+                <input type="checkbox" id="keynavToggle" tabindex="11" unchecked>
+                <span class="slider round"></span>
+            </label>
+            <p>Keyboard Navigation</p>
+        </div>
+    </div>
+
+    <div class="gameover-container">
+        <div class="gameover-message-container">
+            <h2 id="gameoverText"></h2>
+            <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fgithub.com%2Fnursealma%2Ftic-tac-toe&text=I%20just%20won%20at%20Tic%20Tac%20Toe%20and%20so%20can%20you%21&hashtags=tictactoe%2Cvanilla%2Cjavascript%2Chtml%2Ccss">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <button id="restartButton">Play Again!</button>
+        </div>
+    </div>
+    
+    <div class="error-container">
+        <div class="error-message-container">
+            <h2>This square is already occupied! Select an empty square!</h2>
+            <button id="resumeButton">Resume</button>
+        </div>
+    </div>
+
+</body>
+</html>
