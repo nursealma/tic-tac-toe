@@ -30,6 +30,7 @@ const boxClicked = (e) => {
             selectRandomBox();
         } else if (typeof virtualBoxes[id] === "string") {
             errorContainer.classList.add('modal-active');
+            resumeButton.focus();
         } else {
             virtualBoxes[id] = currentPlayer;
             e.target.style.backgroundColor = currentPlayer;
