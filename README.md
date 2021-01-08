@@ -16,5 +16,6 @@ diagonally, this player is announced to be the winner and the game is over
 
 ● Random Mode:
 If this mode is turned on, the game will generate a Blue and Yellow play on a random playable cell every time the board is clicked/tapped. The rest of the rules of the game remain the same.
+
 ● Accessibility:
 Allow players to play just by using a keyboard as their only input.
