@@ -50,11 +50,13 @@ const checkWin = () => {
         }
         if (!victory && virtualBoxes.every(e => {return typeof e === "string"})) {
             gameoverContainer.classList.add('modal-active');
+            restartButton.focus();
             gameoverText.innerHTML = `DRAW! Tweet About It or Play Again!`;
         }
         if (victory) {
             domBoxes.forEach(box => box.removeEventListener('click', boxClicked));
             gameoverContainer.classList.add('modal-active');
+            restartButton.focus();
             gameoverText.innerHTML = `Congratulations ${currentPlayer === blue ? "BLUE" : "YELLOW"}! Tweet about your victory or play again!`;
     }
     })

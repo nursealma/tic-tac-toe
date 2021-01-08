@@ -183,8 +183,67 @@ i {
     font-family: 'Comfortaa', cursive;
     color: #FF0099;
 }
+i:focus,
+i:hover,
+#restartButton:focus,
+#resumeButton:focus,
+#restartButton:hover,
+#resumeButton:hover {
+    box-shadow: 0 0 10px #FF0099;
+}  
 
 .modal-active {
     visibility: visible;
     opacity: 1;
+}
+
+
+@media screen and (max-width: 525px) {
+    .game-container {
+        height: 100vh;
+        width: 100%;
+        margin: auto;
+    }
+
+    .box {
+        width: 33%;
+        height: 33vw;
+        float: left;
+        margin: 0;
+        padding: 0;
+        cursor: pointer;
+        text-align: center;
+    }
+
+    h1 {
+        padding: 30px;
+        font-size: 40px;
+    }
+
+    .toggle-container {
+        width: 40%;
+        display: inline-block;
+        padding-top: 20px;
+    }
+
+    p {
+        padding-top: 15px;
+    }
+
+    .gameover-message-container,
+    .error-message-container {
+        width: 80%;
+        height: 70%;
+        padding: 30px;
+        display: flex;
+        text-align: center;
+        color: rgba(53,28,117, 0.9);
+        line-height: 30px;
+        font-size: 20px;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 30px;
+        background-color: rgba(200, 200, 200, 0.8);
+    }
 }
