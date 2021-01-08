@@ -30,6 +30,7 @@ const boxClicked = (e) => {
             selectRandomBox();
         } else if (typeof virtualBoxes[id] === "string") {
             errorContainer.classList.add('modal-active');
+            document.removeEventListener('keydown', handleKeys)
             resumeButton.focus();
         } else {
             virtualBoxes[id] = currentPlayer;
@@ -77,7 +78,8 @@ const restartClicked = () => {
 }
 
 const resumeClicked = () => {
-     errorContainer.classList.remove('modal-active')
+    errorContainer.classList.remove('modal-active');
+    document.addEventListener('keydown', handleKeys);
 }
 
 const selectRandomBox = () => {
