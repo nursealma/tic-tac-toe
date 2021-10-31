@@ -19,3 +19,4 @@ If this mode is turned on, the game will generate a Blue and Yellow play on a ra
 
 ● Accessibility:
 Allow players to play just by using a keyboard as their only input.
+https://nursealma.github.io/tic-tac-toe/
